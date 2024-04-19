@@ -58,21 +58,21 @@ body{
 .image1{
     height: 150px;
     width: 150px;
-    background-image: url('admin.avif');
+    background-image: url('images/admin.avif');
     background-size: cover;
     margin: auto;
 }
 .image2{
     height: 150px;
     width: 150px;
-    background-image: url('teacher.jpg');
+    background-image: url('images/teacher.jpg');
     background-size: cover;
     margin: auto;
 }
 .image3{
     height: 150px;
     width: 150px;
-    background-image: url('student.jpg');
+    background-image: url('images/student.jpg');
     background-size: cover;
     margin: auto;
 }

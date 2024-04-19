@@ -44,7 +44,7 @@ body{
     margin-left: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-image: url("student1.jpg");
+    background-image: url("images/student1.jpg");
     background-size: cover;
 }
 .image-teacher{
@@ -53,7 +53,7 @@ body{
     margin-left: 20px;
     margin-top: 80px;
     margin-bottom: 50px;
-    background-image: url("teacher1.jpg");
+    background-image: url("images/teacher1.jpg");
     background-size: cover;
 }
 .image-admin{
@@ -62,7 +62,7 @@ body{
     margin-left: 20px;
     margin-top: 60px;
     margin-bottom: 50px;
-    background-image: url("admin1.gif");
+    background-image: url("images/admin1.gif");
     background-size: cover;
 }
 .box h1{
@@ -101,4 +101,7 @@ body{
 }
 .register-link p{
     text-align: center;
+}
+.btn:hover{
+    border-color:rgb(0, 105, 243) ;
 }
