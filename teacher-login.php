@@ -13,12 +13,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         // User with provided email and password exists, redirect to home.html
-        header("Location: home.html");
+        header("Location: teacher-home.html");
         exit();
     } else {
         // No user found with provided email and password, display alert message
+        echo "<script>window.location.href = 'teacher-login.html';</script>"; // Redirect back to login page
         echo "<script>alert('Wrong password or email ID');</script>";
-        echo "<script>window.location.href = 'teacher_login.html';</script>"; // Redirect back to login page
         exit();
     }
 }

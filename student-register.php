@@ -18,10 +18,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_check_sql = "SELECT * FROM Students WHERE email = '$email'";
     $email_result = $conn->query($email_check_sql);
     if ($email_result->num_rows > 0) {
-        // Email already exists, display alert message
-        echo "<script>alert('Email already exists');</script>";
         // Redirect back to registration page
         echo "<script>window.location.href = 'student-register.html';</script>";
+        // Email already exists, display alert message
+        echo "<script>alert('Email already exists');</script>";
         exit();
     }
 
@@ -29,10 +29,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $prn_check_sql = "SELECT * FROM Students WHERE prn = '$prn_number'";
     $prn_result = $conn->query($prn_check_sql);
     if ($prn_result->num_rows > 0) {
-        // PRN number already exists, display alert message
-        echo "<script>alert('PRN number already exists');</script>";
         // Redirect back to registration page
         echo "<script>window.location.href = 'student-register.html';</script>";
+        // PRN number already exists, display alert message
+        echo "<script>alert('PRN number already exists');</script>";
         exit();
     }
 
@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Registration successful, display alert message
         echo "<script>alert('Registration successful');</script>";
         // Redirect to login page or any other page
-        echo "<script>window.location.href = 'studentlogin.html';</script>";
+        echo "<script>window.location.href = 'student-login.html';</script>";
         exit();
     } else {
         // Error occurred during registration, display error message

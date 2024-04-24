@@ -26,10 +26,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $teacher_id_check_sql = "SELECT * FROM Teachers WHERE teacher_id = '$teacher_id'";
     $teacher_id_result = $conn->query($teacher_id_check_sql);
     if ($teacher_id_result->num_rows > 0) {
-        // Teacher ID already exists, display alert message
-        echo "<script>alert('Teacher ID already exists');</script>";
         // Redirect back to registration page
         echo "<script>window.location.href = 'teacher-register.html';</script>";
+        // Teacher ID already exists, display alert message
+        echo "<script>alert('Teacher ID already exists');</script>";
         exit();
     }
 
@@ -39,10 +39,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             VALUES ('$first_name', '$last_name', '$teacher_id', '$email', '$password')";
 
     if ($conn->query($sql) === TRUE) {
+        // Redirect to login page
+        echo "<script>window.location.href = 'teacher-login.html';</script>";
         // Registration successful, display alert message
         echo "<script>alert('Registration successful');</script>";
-        // Redirect to login page
-        echo "<script>window.location.href = 'teacherlogin.html';</script>";
         exit();
     } else {
         // Error occurred during registration, display error message
