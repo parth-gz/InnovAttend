@@ -34,4 +34,3 @@ function openWebpage() {
         alert("Please select an option first.");
     }
 }
-

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+        <div class="box">
+            <form action="register_student.php" method="post">
+            <div class="nm">
+                <p>Name:</p>
+                <input type="text" name="first_name" placeholder="First name" required>
+                <input type="text" name="last_name" placeholder="Last name" required>
+            </div>
+            <div class="prn">
+                <p>PRN:</p>
+                <input type="text" name="prn_number" placeholder="Eg. UCS22M1041" required>
+            </div>
+            <div class="nm">
+                <p>Class:</p>
+                <select class="dropdown" required>
+                    <option value="" disabled selected style="display:none;">Select class</option>
+                    <option name="first_year" value="FY">FY</option>
+                    <option name="second_year" value="SY">SY</option>
+                    <option name="third_year" value="TY">TY</option>
+                    <option name="last_year" value="Last Year">Last Year</option>
+                  </select>
+                  <p>Division:</p>
+                  <select class="dropdown" required>
+                    <option  value="" disabled selected style="display:none;">Select division</option>
+                    <option name="A" value="A">A</option>
+                    <option name="B" value="B">B</option>
+                    <option name="C" value="C">C</option>
+                    <option name="D" value="D">D</option>
+                  </select>
+            </div>
+            <div class="nm">
+                <p>
+                    Roll no.:
+                </p>
+                <input type="number" name="roll_number" value="Roll-Number" placeholder="Roll number" required>
+            </div>
+            <div class="nm">
+                <p>Email:</p>
+                <input type="email" name="email" placeholder="Eg. abc@xyz.com" required>
+            </div>
+            <div class="nm">
+                <p>Password:</p>
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="btn">
+                <button type="submit" value="Register"></button>
+            </div>
+            <div class="login-link">
+            
+                <p>Already have an account? <a href="teacherlogin.html">Login</a></p>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

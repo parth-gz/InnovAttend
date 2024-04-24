@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Registration</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <script src="js/script.js"></script>
+    <div class="container">
+        <form action="register_teacher.php" method="post">
+        <h1>Teacher Registration</h1>
+        <div class="box">
+            <div class="nm">
+                <p>Name:</p>
+                <input type="text" name="first_name" placeholder="First name" required>
+                <input type="text" name="last_name" placeholder="Last name" required>
+            </div>
+            <div class="id">
+                <p>ID:</p>
+                <input type="text" name="teacher_id" placeholder="Eg. CS1234" required>
+            </div>
+            <div class="nm">
+                <p>Email:</p>
+                <input type="email" name="email" placeholder="Eg. abc@xyz.com" required>
+            </div>
+            <div class="nm">
+                <p>Password:</p>
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="btn">
+                <input type="submit" value="Register"></input>
+            </div>
+            <div class="login-link">
+                <p>Already have an account? <a href="teacherlogin.html">Login</a></p>
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

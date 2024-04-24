@@ -1,0 +1,137 @@
+*{
+    font-family: Arial;
+}
+body{
+    background-color: rgb(190, 190, 190);
+    justify-content: center;
+}
+.container{
+    height:600px;
+    width: 90%;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: auto;
+    margin-top:28.275px;
+}
+.container h1{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    margin-top: 0px;
+    flex-direction: column;
+}
+.box{
+    height: 475px;
+    width: 500px;
+    /*margin-top: 50px;
+    margin-bottom: 50px;*/
+    margin-left: 28.4%;
+    padding: 20px;
+    justify-content: center;
+    background-color: rgba(155, 161, 168, 0.1);
+    border-radius: 15px;
+    border-width: 1.9px;
+    border-color: rgb(190, 190, 190);
+    padding-left: 40px;
+}
+.nm{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 15px;
+    height: 50px;
+}
+.box p{
+    margin:16px 10px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.box input{
+    margin: 6px 7px;
+    height: 35px;
+    width: 180px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0.7px;
+    padding-left: 20px;
+    font-size: 13px;
+}
+.prn{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 10px;
+    height: 50px;
+}
+.prn input{
+    margin:6px 0px 6px 17px;
+}
+input:hover{
+    border-color:rgb(0, 105, 243);
+}
+.dropdown{
+    
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0.7px;
+    height: 35px;
+    width: 120px;
+    margin: auto;
+    margin-left: 8px;
+    padding-left:8px;
+}
+.dropdown:hover{
+    border-color: rgb(0, 105, 243);
+}
+.dropdown option[disabled] {
+    color: rgb(190, 190, 190);
+}
+.btn input{
+    height: 40px;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    
+    border-radius: 20px;
+    background-color: white;
+    border-width: 0.7px;
+    border-style: solid;
+    border-color: gray;
+    font-size: 15px;
+}
+.btn{
+    margin-top: -5px;
+    margin-left: 35px;
+    justify-content: center;
+    width: 400px;
+}
+.btn input:hover{
+    font-weight: 500;
+    background-color: rgb(224, 224, 224);
+    border-color: rgb(0, 105, 243);
+}
+.id{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 10px;
+    height: 50px;
+}
+.id input{
+    margin:6px 0px 6px 32px;
+}
+.login-link{
+    width: 100%;
+    text-align: right;
+    padding-right: 40px;
+}
+.login-link p{
+    font-size: 12px;
+    font-weight: 600;
+}
