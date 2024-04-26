@@ -17,8 +17,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
         // No user found with provided email and password, display alert message
+        echo "<script>alert('Wrong password or email ID');</script>"; // Show alert message
         echo "<script>window.location.href = 'teacher-login.html';</script>"; // Redirect back to login page
-        echo "<script>alert('Wrong password or email ID');</script>";
         exit();
     }
 }

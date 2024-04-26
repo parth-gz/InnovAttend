@@ -23,11 +23,27 @@ function openWebpage() {
 
         // Open the corresponding HTML file based on the selected box
         if (boxText === 'Student') {
-            window.location.href = "studentlogin.html";
+            window.location.href = "student-login.html";
         } else if (boxText === 'Teacher') {
-            window.location.href = "teacherlogin.html";
+            window.location.href = "teacher-login.html";
         } else if (boxText === 'Admin/Owner') {
-            window.location.href = "adminlogin.html";
+            window.location.href = "admin-login.html";
+        }
+
+        else if (boxText === 'Mark Attendance') {
+            window.location.href = "mark-attendance.html";
+        }
+        else if (boxText === 'View Attendance') {
+            window.location.href = "view-attendance.html";
+        }
+        else if (boxText === 'Contact Admin') {
+            window.location.href = "contact-admin.html";
+        }
+        else if (boxText === 'Class Schedule') {
+            window.location.href = "class-schedule.html";
+        }
+        else if (boxText === 'Request Leave') {
+            window.location.href = "request-leave.html";
         }
     } else {
         // Button is gray, do nothing

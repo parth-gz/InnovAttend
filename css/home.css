@@ -33,6 +33,7 @@ body{
     border-width: 0;
     margin: auto;
     margin-left: 20px;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -54,4 +55,93 @@ body{
     width: 100%;
     height: 25px;
     text-align: center;
+}
+.nm{
+    margin-top: 15px;
+    width: 100%;
+    height: 25px;
+    text-align: left;
+    padding-left: 25%;
+}
+.panel{
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+    justify-content: center;
+    align-items: center;
+    padding:0px 50px 0px 160px ;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 5px;
+    border-color: rgb(190, 190, 190);
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 35px;
+    border-width: 0.8px;
+    border-style: solid;
+
+}
+.box:hover {
+    border-color: #0069f3;
+    border-width: 1.8px;
+    font-weight: bold;
+}
+.image1{
+    height: 150px;
+    width: 150px;
+    background-image: url('images/attendance.png');
+    background-size: cover;
+    margin: auto;
+}
+.image2{
+    height: 150px;
+    width: 150px;
+    background-image: url('images/view-attendance.png');
+    background-size: cover;
+    margin: auto;
+}
+.image3{
+    height: 150px;
+    width: 150px;
+    background-image: url('images/admin-icon.png');
+    background-size: cover;
+    margin: auto;
+}
+.image4{
+    height: 150px;
+    width: 150px;
+    background-image: url('images/class-schedule.png');
+    background-size: cover;
+    margin: auto;
+}
+.image5{
+    height: 150px;
+    width: 150px;
+    background-image: url('images/request-leave.png');
+    background-size: cover;
+    margin: auto;
+}
+.box p{
+    margin: top 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+.box.active {
+    border: 2px solid #0069f3;
+}
+.btn{
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(190, 190, 190);
+    border-radius: 5px;
+    border-width: 0px;
+    width: 100px;
+    height: 40px;
+    font-weight: 700;
 }
