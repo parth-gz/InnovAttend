@@ -2,7 +2,7 @@
 // Database connection parameters
 $servername = "localhost"; // Change this if your database server is hosted elsewhere
 $username = "root"; // Change this to your database username
-$password = "#Parth@23"; // Change this to your database password
+$password = "mysql_password"; // Change this to your database password
 $dbname = "InnovAttend"; // Change this to your database name
 
 // Create connection
