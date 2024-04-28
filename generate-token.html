@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mark Attendance</title>
+    <title>Generate Token</title>
     <link rel="stylesheet" href="css/mark-attendance.css">
 </head>
 <body>
-    <script src="js/script.js"></script>
-    <h1>Mark Attendance</h1>
+    <h1>Generate Token</h1>
     <div class="container">
-        <form action="mark-attendance.php" method="post">
-        <h2>Select Subject to Mark Attendance</h2>
+        <h2>Select Subject to generate token</h2>
         <div class="panel">
             <h3>Theory</h3>
-                <div class="flex">
+            <div class="flex">
                 <button class="box" onclick="lightUpNextButton(this)"><p>OSA</p></button>
                 <button class="box" onclick="lightUpNextButton(this)"><p>ADS</p></button>
                 <button class="box" onclick="lightUpNextButton(this)"><p>EM3</p></button>
@@ -23,21 +21,18 @@
                 <button class="box" onclick="lightUpNextButton(this)"><p>CR</p></button>
             </div>
         </div>
+
         <div class="panel">
             <h3>Practical</h3>
             <div class="flex">
-                <button class="box" onclick="lightUpNextButton(this)"><p>OSA-Lab</p></button>
-                <button class="box" onclick="lightUpNextButton(this)"><p>ADS-Lab</p></button>
+                <button class="box" onclick="lightUpNextButton(this)"><p>OSA</p></button>
+                <button class="box" onclick="lightUpNextButton(this)"><p>ADS</p></button>
                 <button class="box" onclick="lightUpNextButton(this)"><p>MPL</p></button>
-                <button class="box" onclick="lightUpNextButton(this)"><p>DBMS-Lab</p></button>
+                <button class="box" onclick="lightUpNextButton(this)"><p>DBMS</p></button>
             </div>
-
         </div>
-        <div class="panel">
-            <input type="text" name="token" placeholder="Enter Token (Eg.1xb34c)" required>
-        </div>
-        <div class="panel"><input type="submit" value="Mark attendance"></div>
-    </form>
+        <button class="btn" id="nextButton" onclick="generateAndStoreToken()">Next</button>
     </div>
+    <script src="js/mark-attendance.js"></script>
 </body>
 </html>

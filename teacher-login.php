@@ -1,5 +1,6 @@
 <?php
-include 'db_connect.php';
+// Include the database connection script
+include "db_connect.php";
 
 // Check if the form was submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -7,19 +8,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    // Prepare and execute SQL statement to select user with provided email and password
+    // Prepare and execute SQL statement to check if email and password match
     $sql = "SELECT * FROM Teachers WHERE email = '$email' AND password = '$password'";
     $result = $conn->query($sql);
 
-    if ($result->num_rows > 0) {
-        // User with provided email and password exists, redirect to home.html
-        header("Location: teacher-home.html");
+    // Check if a matching record was found
+    if ($result->num_rows == 1) {
+        // Email and password match, retrieve student data
+        $teacher_data = $result->fetch_assoc();
+        
+        // Redirect to student-home.html with student data appended as query parameters
+        header("Location: teacher-home.php?first_name={$teacher_data['first_name']}&last_name={$teacher_data['last_name']}&teacher_id={$teacher_data['teacher_id']}&email={$teacher_data['email']}");
         exit();
     } else {
-        // No user found with provided email and password, display alert message
-        echo "<script>alert('Wrong password or email ID');</script>"; // Show alert message
-        echo "<script>window.location.href = 'teacher-login.html';</script>"; // Redirect back to login page
-        exit();
+        // Email and password don't match, display alert message
+        echo "<script>alert('Incorrect Email or password');</script>";
     }
 }
 

@@ -1,9 +1,8 @@
 <?php
-// Database connection parameters
-$servername = "localhost"; // Change this if your database server is hosted elsewhere
-$username = "root"; // Change this to your database username
-$password = "mysql_password"; // Change this to your database password
-$dbname = "InnovAttend"; // Change this to your database name
+$servername = "localhost"; 
+$username = "root"; 
+$password = "mysql_password"; 
+$dbname = "InnovAttend";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

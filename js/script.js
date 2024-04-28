@@ -12,6 +12,7 @@ function lightUpNextButton(box) {
     document.getElementById("nextButton").style.backgroundColor = "#0069f3";
 }
 
+
 function openWebpage() {
     // Check if the next button is active (blue)
     var nextButton = document.getElementById("nextButton");
@@ -44,6 +45,22 @@ function openWebpage() {
         }
         else if (boxText === 'Request Leave') {
             window.location.href = "request-leave.html";
+        }
+
+        else if (boxText === 'Generate Token') {
+            window.location.href = "generate-token.html";
+        }
+        else if (boxText === 'Add/Remove Student') {
+            window.location.href = "add-student.html";
+        }
+        else if (boxText === 'View Attendance') {
+            window.location.href = "view-attendance-sheet.html";
+        }
+        else if (boxText === 'Display Defaulters') {
+            window.location.href = "display-defaulters.html";
+        }
+        else if (boxText === 'Contact Admin') {
+            window.location.href = "contact-admin.html";
         }
     } else {
         // Button is gray, do nothing

@@ -43,13 +43,15 @@ body{
     margin-top: 25px;
 }
 .pic{
-    background-color: white;
+    
     width: 150px;
     height: 150px;
     margin-left: 125px;
     margin-bottom: 20px;
     margin-top: 30px;
     border-radius: 50%;
+    background-image: url("images/default-pfp.png");
+    background-size: cover;
 }
 .name{
     width: 100%;

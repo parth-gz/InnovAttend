@@ -14,8 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Check if a matching record was found
     if ($result->num_rows == 1) {
-        // Email and password match, redirect to student-home.html
-        header("Location: student-home.html");
+        // Email and password match, retrieve student data
+        $student_data = $result->fetch_assoc();
+        
+        // Redirect to student-home.html with student data appended as query parameters
+        header("Location: student-home.php?first_name={$student_data['first_name']}&last_name={$student_data['last_name']}&class={$student_data['class']}&division={$student_data['division']}&roll_number={$student_data['rollno']}&prn_number={$student_data['prn']}");
         exit();
     } else {
         // Email and password don't match, display alert message
