@@ -50,7 +50,7 @@ body{
     margin-bottom: 20px;
     margin-top: 30px;
     border-radius: 50%;
-    background-image: url("images/default-pfp.png");
+    background-image: url("images/default-profile-pic.png");
     background-size: cover;
 }
 .name{

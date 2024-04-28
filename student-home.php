@@ -1,3 +1,8 @@
+<?php
+// Start session
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,19 +23,19 @@
 
             </div>
             <div class="name">
-               <p> <?php echo htmlspecialchars($_GET['first_name']) . " " . htmlspecialchars($_GET['last_name']); ?></p>
+               <p> <?php echo htmlspecialchars($_SESSION['first_name']) . " " . htmlspecialchars($_SESSION['last_name']); ?></p>
             </div>
             <div class="nm">
-                <p>Class: <?php echo $_GET['class']; ?> </p>
+                <p>Class: <?php echo $_SESSION['class']; ?> </p>
             </div>
             <div class="nm">
-                <p>Division: <?php echo $_GET['division']; ?> </p>
+                <p>Division: <?php echo $_SESSION['division']; ?> </p>
             </div>
             <div class="nm">
-                <p>Roll number: <?php echo htmlspecialchars($_GET['roll_number']); ?></p>
+                <p>Roll number: <?php echo htmlspecialchars($_SESSION['roll_number']); ?></p>
             </div>
             <div class="nm">
-            <p>PRN number: <?php echo htmlspecialchars($_GET['prn_number']); ?></p>
+                <p>PRN number: <?php echo htmlspecialchars($_SESSION['prn_number']); ?></p>
             </div>
         </div>
        <div class="right-container">

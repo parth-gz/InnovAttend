@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
         // Email and password don't match, display alert message
-        echo "<script>alert('Incorrect Email or password');</script>";
+        echo "<script>alert('Incorrect Email or password'); window.location.href = 'teacher-login.html';</script>";
     }
 }
 

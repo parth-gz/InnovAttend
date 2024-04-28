@@ -2,21 +2,16 @@
 // Database connection
 include "db_connect.php";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Generate random token
+$token = substr(md5(uniqid(rand(), true)), 0, 6); // Adjust the length of the token as needed
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+// Get subject name from POST request
+$subjectName = $_POST['subject_name'];
 
-// Retrieve the token from the POST request
-$token = $_POST['token'];
-
-// Insert the token into the database
-$sql = "INSERT INTO tokens (token) VALUES ('$token')";
+// Insert token and subject name into the database
+$sql = "INSERT INTO tokens (token, subject_name) VALUES ('$token', '$subjectName')";
 if ($conn->query($sql) === TRUE) {
-    echo "Token stored successfully.";
+    echo $token; // Return the generated token
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

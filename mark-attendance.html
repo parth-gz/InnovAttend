@@ -10,7 +10,7 @@
     <script src="js/script.js"></script>
     <h1>Mark Attendance</h1>
     <div class="container">
-        <form action="mark-attendance.php" method="post">
+        <form action="mark-attendance.php" method="post" id="attendanceForm">
         <h2>Select Subject to Mark Attendance</h2>
         <div class="panel">
             <h3>Theory</h3>
@@ -37,6 +37,7 @@
             <input type="text" name="token" placeholder="Enter Token (Eg.1xb34c)" required>
         </div>
         <div class="panel"><input type="submit" value="Mark attendance"></div>
+        <input type="hidden" name="subject" id="subjectInput">
     </form>
     </div>
 </body>
