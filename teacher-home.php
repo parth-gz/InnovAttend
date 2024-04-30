@@ -30,25 +30,25 @@
        <div class="right-container">
             <div class="panel">
                 <button class="box" onclick="lightUpNextButton(this)">
-                    <div class="image1"></div>
+                    <div class="image-generate-token"></div>
                     <p>Generate Token</p>
                 </button>
                 <button class="box" onclick="lightUpNextButton(this)">
-                    <div class="image2"></div>
-                    <p>Add Student</p>
+                    <div class="image-add-remove-user"></div>
+                    <p>Add/Remove Student</p>
                 </button>
                 <button class="box" onclick="lightUpNextButton(this)">
-                    <div class="image3"></div>
+                    <div class="image-view-attendance"></div>
                     <p>View Attendance</p>
                 </button>
             </div>
             <div class="panel">
                 <button class="box" onclick="lightUpNextButton(this)">
-                    <div class="image4"></div>
+                    <div class="image-defaulters"></div>
                     <p>Display Defaulters</p>
                 </button>
                 <button class="box" onclick="lightUpNextButton(this)">
-                    <div class="image5"></div>
+                    <div class="image3"></div>
                     <p>Contact Admin</p>
                 </button>
             </div>

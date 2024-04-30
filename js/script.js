@@ -35,7 +35,7 @@ function openWebpage() {
             window.location.href = "mark-attendance.html";
         }
         else if (boxText === 'View Attendance') {
-            window.location.href = "view-attendance.html";
+            window.location.href = "view-attendance.php";
         }
         else if (boxText === 'Contact Admin') {
             window.location.href = "contact-admin.html";
@@ -51,10 +51,7 @@ function openWebpage() {
             window.location.href = "generate-token.html";
         }
         else if (boxText === 'Add/Remove Student') {
-            window.location.href = "add-student.html";
-        }
-        else if (boxText === 'View Attendance') {
-            window.location.href = "view-attendance-sheet.html";
+            window.location.href = "add-remove-student.html";
         }
         else if (boxText === 'Display Defaulters') {
             window.location.href = "display-defaulters.html";

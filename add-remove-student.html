@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add/Remove Student</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script src="js/add-remove.js"></script>
+    <div class="container">
+        <div class="header">
+            <h1>Add/Remove Student</h1>
+            <p>what do you want to do?</p>
+        </div>
+        <div class="boxes">
+            <button class="box" onclick="lightUpNextButton(this)">
+                <div class="image-add-user"></div>
+                <p>Add Student</p>
+            </button>
+            <button class="box" onclick="lightUpNextButton(this)">
+                <div class="image-remove-user"></div>
+                <p>Remove Student</p>
+            </button>
+        </div>
+        <div class="panel">
+            <button class="btn" id="nextButton" onclick="openWebpage()">Next</button>
+        </div>
+    </div>
+</body>
+</html>

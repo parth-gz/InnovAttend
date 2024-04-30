@@ -48,10 +48,7 @@ session_start();
                     <div class="image2"></div>
                     <p>View Attendance</p>
                 </button>
-                <button class="box" onclick="lightUpNextButton(this)">
-                    <div class="image3"></div>
-                    <p>Contact Admin</p>
-                </button>
+                
             </div>
             <div class="panel">
                 <button class="box" onclick="lightUpNextButton(this)">
@@ -59,8 +56,8 @@ session_start();
                     <p>Class Schedule</p>
                 </button>
                 <button class="box" onclick="lightUpNextButton(this)">
-                    <div class="image5"></div>
-                    <p>Request Leave</p>
+                    <div class="image3"></div>
+                    <p>Contact Admin</p>
                 </button>
             </div>
             <div class="panel">
